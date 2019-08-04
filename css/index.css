@@ -1,0 +1,113 @@
+*{
+	margin:0;
+	padding:0;
+}
+html,body{
+	height:100%;
+	text-align: center;
+}
+body{
+	font-family:"microsoft yahei";
+}
+.swiper-container {
+  /*  width: 320px;
+    height: 480px;*/
+	width: 100%;
+    height: 100%;
+	background:#fff;
+}  
+.swiper-slide{
+	width:100%;
+	height:100%;
+    background: #fff;
+	background-size:100% 100%;
+}
+img{
+	display:block;
+}
+.pg1-title-en{
+	color:#fff;
+	background: #000; 
+	text-align: center;
+	display:inline-block; 
+}
+.pg1-content{
+    padding:5px;
+}
+.motto span{
+	margin: 0px -1px;
+}
+.page1-rotateimg{
+	/* transition: all 1s; */
+	animation: rotat linear 2.5s infinite !important;
+}
+@keyframes rotat{
+	0%{transform: rotateZ(0deg)}
+	50%{transform: rotateZ(180deg)}
+	99.9%{transform: rotateZ(359deg)}
+	100%{transform: rotateZ(360deg)}
+}
+.pSta{
+    position: static !important;
+}
+#rotateimg{
+	background: url(../img/page1-02.webp) no-repeat center;
+	background-size: 100%;
+}
+.pg2-title{
+	background: #fff; 
+	text-align: center;
+	display:inline-block; 
+}
+.pg2-title-en{
+	color:#fff;
+	background: #000; 
+	text-align:left;
+	display:inline-block; 
+}
+.pg3-title-zn{
+	color:#000; 
+	font-weight: bold;
+	display:block; 
+}
+.tip1:after,.tip2:after,.tip3:after{
+	content:'';
+	display: block;
+}
+.call a{
+	color:#fff;
+	text-decoration: none;
+}
+.swiper-pagination-bullet {
+width: 6px;
+height: 6px;
+background: #fff;
+opacity: .4;
+}
+.swiper-pagination-bullet-active {
+opacity: 1;
+}
+.ani{
+	position:absolute;
+	}
+.txt{
+	position:absolute;
+}
+#array{
+	position:absolute;
+	z-index:999;
+	animation: start 1.5s infinite ease-in-out;
+}
+#music{
+	position:absolute;
+	z-index:999;
+	animation: rotat 1.5s linear infinite ;
+}
+@keyframes tipmove{
+	0%{bottom:10px;opacity:0}
+	50%{bottom:15px;opacity:1}
+	100%{bottom:20px;opacity:0}
+}
+@keyframes start{
+	0%,30%{opacity:0;transform:translateY(10px)}
+	60%{opacity:1;transform:translate(0)}to{opacity:0;transform:translateY(-8px)}}
